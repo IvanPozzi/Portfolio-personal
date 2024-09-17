@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> 
     <script src="codigo.js"></script>
+    
     <script>
 
                 // Espera a que el documento esté cargado
@@ -70,6 +70,23 @@
             });
         });
 
+        function recopilarinformacion(){
+         
+        var nombre = document.getElementById("txtnombre").value;
+        var email = document.getElementById("txtmail").value;
+        var mensaje = document.getElementById("txtmensaje").value;
+        alert("Gracias por contactarte "+nombre+" en breve me estare comunicando " )
+        console.log("Nombre: "+nombre)
+        console.log("Email: "+email)
+        console.log("Mensaje:"+mensaje)
+
+        document.getElementById("txtnombre").value = "";
+        document.getElementById("txtmail").value = "";
+        document.getElementById("txtmensaje").value = "";
+
+
+        } 
+
     </script>
     <style>
       /* traela fuente Pixelify Sans */
@@ -82,12 +99,23 @@
     <style>
      h1{color:rgb(252, 41, 41);
     font-weight: 200 ;}
-    h2{color:greenyellow;
-    font-weight: 200;}
+    h2{color:rgb(120, 224, 17);
+    font-weight: 800;}
     p{color:yellow;
     font-weight: 700;}
     h3{color:rgb(226, 12, 151);
     font-weight: 800;}
+    label{color:darkorange;
+        font-weight: 800;}
+        button{
+            background-color:springgreen;
+            color:crimson;
+            font-weight: 800;
+            width:200px ;
+            height:60px ;
+        }
+
+   
     
     </style>
 </head>
@@ -95,7 +123,7 @@
 <body>
 
 
-    <div class="text-center"><h1 class="pixelify-sans-header">
+    <div class="text-center"><h1 class="pixelify-sans-header" style="color:crimson">
        Iván</h1>
     </div>
         <div>
@@ -107,17 +135,17 @@
                     </td>
                        <td><div id='goToProyectos' class="centered-image conteiner conteiner2">
                      
-                             <h1 class="pixelify-sans-header">Proyectos</h1>
+                             <h1 class="pixelify-sans-header" style="color:chartreuse">Proyectos</h1>
 
                         </div></td>
                         <td><div id='goconosimientos' class="centered-image conteiner conteiner3">
 
-                            <h1 class="pixelify-sans-header">Conosimientos</h1>
+                            <h1 class="pixelify-sans-header" style="color:blueviolet">Conosimientos</h1>
 
                         </div></td>
                         <td><div id='gotocontactos' class="centered-image conteiner conteiner4">
 
-                            <h1 class="pixelify-sans-header">Contactos</h1></div>            
+                            <h1 class="pixelify-sans-header"  style="color:white">Contactos</h1></div>            
     
                         </div></td>
                    
@@ -139,21 +167,42 @@
         <p class="pixelify-sans-header">Mi nombre es Iván, nací en Argentina, en la provincia de Buenos Aires, y actualmente vivo en zona norte, Tigre. Soy técnico electromecánico y programador por pasión. En este momento, estoy cursando la carrera de Técnico Programador en la UTN (Universidad Tecnológica Nacional). Trabajar como programador se ha convertido en uno de mis mayores anhelos, ya que he descubierto en la programación algo que no encontré en otras áreas. Además, realicé un curso de tester en la Fundación Carlos Slim, lo que me permitió adquirir conocimientos en la prueba de aplicaciones y mejorar mis habilidades técnicas. </p>
     </div>
     <div>
-        <h2 id='conosimientos' class="pixelify-sans-header">Conosimientos</h2>
+        <h2 id='conosimientos' class="pixelify-sans-header centered-text">Conosimientos</h2>
         <p class="pixelify-sans-header">Soy un programador con conocimientos en Programación Orientada a Objetos (POO), bases de datos, y manipulación de archivos. Domino lenguajes como C++, C#, SQL y .NET, además de tener experiencia en el desarrollo de aplicaciones utilizando WinForms, un framework de .NET para crear interfaces gráficas. También tengo una base sólida en tecnologías web, incluyendo HTML, CSS y JavaScript, lo que me permite desarrollar sitios y aplicaciones web con funcionalidad tanto en el frontend como en el backend.</p>
     </div>
     <div>
-        <h2 id="Proyectos" class="pixelify-sans-header">Proyectos</h2>
-        <h3 class="pixelify-sans-header">Goblin´s Gold Hunt</h3>
-        <p class="pixelify-sans-header">Mi juego, Goblin's Gold Hunt, es un juego en 2D con gráficos en estilo pixel art. El jugador controla a un duende que debe recolectar la mayor cantidad de monedas de oro posible antes de perder sus tres vidas. Está ambientado en un bosque donde tendrás que enfrentarte a diferentes animales, como ardillas y búhos, mientras evitas sus ataques. El juego registra una puntuación basada en las monedas recolectadas. Lo he desarrollado usando el IDE Visual Studio Community, empleando la biblioteca SFML y programado en C++.</p>
-        <h3 class="pixelify-sans-header">Programa de gestion de articulos</h3>
-        <p class="pixelify-sans-header">He trabajado en el desarrollo de un programa diseñado para gestionar información de artículos en una base de datos alojada en un servidor. Esta base de datos, construida en SQL, almacena detalles como el nombre del artículo, su descripción, marca, categoría, precio y múltiples imágenes asociadas. El programa incluye diversas funcionalidades, como la posibilidad de agregar nuevos artículos al catálogo, listar los artículos ya cargados, y modificar cualquier información relacionada. También permite añadir nuevas categorías o marcas, gestionar imágenes adicionales para los productos, y eliminar aquellos artículos cuya información ya no sea necesaria. Este programa está diseñado para el sistema operativo Windows, desarrollado en el IDE Visual Studio Community utilizando el lenguaje C# y con una base de datos en Azure Management (SQL). La interfaz gráfica fue creada utilizando el framework .NET.</p>
-        <h3 class="pixelify-sans-header">Este portfolio</h3>
+        <h2 id="Proyectos" class="pixelify-sans-header centered-text">Proyectos</h2>
+        <h3 class="pixelify-sans-header centered-text">Goblin´s Gold Hunt</h3>
+        <p class="pixelify-sans-header ">Mi juego, Goblin's Gold Hunt, es un juego en 2D con gráficos en estilo pixel art. El jugador controla a un duende que debe recolectar la mayor cantidad de monedas de oro posible antes de perder sus tres vidas. Está ambientado en un bosque donde tendrás que enfrentarte a diferentes animales, como ardillas y búhos, mientras evitas sus ataques. El juego registra una puntuación basada en las monedas recolectadas. Lo he desarrollado usando el IDE Visual Studio Community, empleando la biblioteca SFML y programado en C++.</p>
+        <h3 class="pixelify-sans-header centered-text">Programa de gestion de articulos</h3>
+        <p class="pixelify-sans-header ">He trabajado en el desarrollo de un programa diseñado para gestionar información de artículos en una base de datos alojada en un servidor. Esta base de datos, construida en SQL, almacena detalles como el nombre del artículo, su descripción, marca, categoría, precio y múltiples imágenes asociadas. El programa incluye diversas funcionalidades, como la posibilidad de agregar nuevos artículos al catálogo, listar los artículos ya cargados, y modificar cualquier información relacionada. También permite añadir nuevas categorías o marcas, gestionar imágenes adicionales para los productos, y eliminar aquellos artículos cuya información ya no sea necesaria. Este programa está diseñado para el sistema operativo Windows, desarrollado en el IDE Visual Studio Community utilizando el lenguaje C# y con una base de datos en Azure Management (SQL). La interfaz gráfica fue creada utilizando el framework .NET.</p>
+        <h3 class="pixelify-sans-header centered-text">Este portfolio</h3>
         <p class="pixelify-sans-header">He creado este portfolio utilizando el IDE Visual Studio Code, empleando tecnologías web como HTML, CSS y JavaScript. El proyecto destaca por su diseño elegante y funcionalidad dinámica, con una estructura bien definida que facilita la navegación. El HTML se encarga de la estructura básica del sitio, mientras que el CSS se utiliza para aplicar estilos visuales y crear una experiencia atractiva para el usuario. El JavaScript agrega interactividad, permitiendo una experiencia más envolvente y personalizada. Este enfoque integral asegura que el portfolio no solo sea visualmente atractivo, sino también funcional y accesible.</p>
 
     </div>
     <div>                            
-        <h2 id='contactos' class="pixelify-sans-header">Contactos</h2>
+        <h2 id='contactos' class="pixelify-sans-header centered-text">Contactos</h2>
+
+      <div><label for="" class="pixelify-sans-header ">Nombre</label>
+        <div><input type="text" id="txtnombre" class="pixelify-sans-header"></div></div>
+
+        <div><label for="" class="pixelify-sans-header ">Email</label>
+            <div class="conteiner"><input type="text" id="txtmail" class="pixelify-sans-header "></div></div>
+
+        <div class="conteiner">
+
+            <label for="txtmensaje" class="pixelify-sans-header ">Dejame tu mensaje</label>
+
+             <textarea type="text" id="txtmensaje" class="pixelify-sans-header "></textarea>
+    
+         </div>
+
+        <div>
+
+            <button onclick="recopilarinformacion()" class="pixelify-sans-header">Enviar</button>
+
+        </div>
+
         <a href="https://www.linkedin.com/in/ivan-pozzi-58129627a">
             <img class="centered-image conteiner" width="100" src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/0baeb31aedf8e64.png" alt="imagen linkedin";>
         </a>

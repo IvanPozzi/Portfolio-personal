@@ -1,4 +1,4 @@
-codigo.js
+
     
         // Espera a que el documento esté cargado
         document.addEventListener("DOMContentLoaded", function() {
