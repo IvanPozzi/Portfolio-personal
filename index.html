@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="codigo.js"></script>
+    <script>
+
+                // Espera a que el documento esté cargado
+                document.addEventListener("DOMContentLoaded", function() {
+            // elige el contenedor que va a usar
+            const goToSobreMi = document.getElementById('goToSobreMi');
+
+            // recibe el click en el contenedor
+            goToSobreMi.addEventListener('click', function() {
+                // Selecciona  "Sobre mi"
+                const sobreMiSection = document.getElementById('sobreMi');
+
+                // se mueve asta la seccion que queres
+                sobreMiSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+             
+             document.addEventListener("DOMContentLoaded", function() {
+            
+            const goToSobreMi = document.getElementById('goToProyectos');
+
+            
+            goToSobreMi.addEventListener('click', function() {
+                
+                const sobreMiSection = document.getElementById('Proyectos');
+
+                
+                sobreMiSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+                
+                document.addEventListener("DOMContentLoaded", function() {
+            
+            const goToSobreMi = document.getElementById('goconosimientos');
+
+            
+            goToSobreMi.addEventListener('click', function() {
+                
+                const sobreMiSection = document.getElementById('conosimientos');
+
+                
+                sobreMiSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    
+                
+                document.addEventListener("DOMContentLoaded", function() {
+            
+            const goToSobreMi = document.getElementById('gotocontactos');
+
+            
+            goToSobreMi.addEventListener('click', function() {
+                
+                const sobreMiSection = document.getElementById('contactos');
+
+                
+                sobreMiSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+    </script>
+    <style>
+      /* traela fuente Pixelify Sans */
+      @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    </style>
+    <title>
+        portfolio personal
+    </title>
+
+    <style>
+     h1{color:rgb(252, 41, 41);
+    font-weight: 200 ;}
+    h2{color:greenyellow;
+    font-weight: 200;}
+    p{color:yellow;
+    font-weight: 700;}
+    h3{color:rgb(226, 12, 151);
+    font-weight: 800;}
+    
+    </style>
+</head>
+
+<body>
+
+
+    <div class="text-center"><h1 class="pixelify-sans-header">
+       Iván</h1>
+    </div>
+        <div>
+                   <table>
+                    <td>
+                        <div id='goToSobreMi' class="centered-image conteiner conteiner1">
+                            <h1 class="pixelify-sans-header">Sobre mi</h1>
+                        </div>
+                    </td>
+                       <td><div id='goToProyectos' class="centered-image conteiner conteiner2">
+                     
+                             <h1 class="pixelify-sans-header">Proyectos</h1>
+
+                        </div></td>
+                        <td><div id='goconosimientos' class="centered-image conteiner conteiner3">
+
+                            <h1 class="pixelify-sans-header">Conosimientos</h1>
+
+                        </div></td>
+                        <td><div id='gotocontactos' class="centered-image conteiner conteiner4">
+
+                            <h1 class="pixelify-sans-header">Contactos</h1></div>            
+    
+                        </div></td>
+                   
+                  
+                    </table>
+      
+    
+    </div>
+    
+
+
+    <div>
+        <h2 id="sobreMi" class="pixelify-sans-header centered-text">Sobre mi</h2>
+        
+        <div class="otrocontainer">
+            <img class="centered-image" width="300" src="https://i.pinimg.com/1200x/87/d7/af/87d7afe62c0c1242da4634b03a995422.jpg" alt="mi foto">
+        </div>
+    </div>
+        <p class="pixelify-sans-header">Mi nombre es Iván, nací en Argentina, en la provincia de Buenos Aires, y actualmente vivo en zona norte, Tigre. Soy técnico electromecánico y programador por pasión. En este momento, estoy cursando la carrera de Técnico Programador en la UTN (Universidad Tecnológica Nacional). Trabajar como programador se ha convertido en uno de mis mayores anhelos, ya que he descubierto en la programación algo que no encontré en otras áreas. Además, realicé un curso de tester en la Fundación Carlos Slim, lo que me permitió adquirir conocimientos en la prueba de aplicaciones y mejorar mis habilidades técnicas. </p>
+    </div>
+    <div>
+        <h2 id='conosimientos' class="pixelify-sans-header">Conosimientos</h2>
+        <p class="pixelify-sans-header">Soy un programador con conocimientos en Programación Orientada a Objetos (POO), bases de datos, y manipulación de archivos. Domino lenguajes como C++, C#, SQL y .NET, además de tener experiencia en el desarrollo de aplicaciones utilizando WinForms, un framework de .NET para crear interfaces gráficas. También tengo una base sólida en tecnologías web, incluyendo HTML, CSS y JavaScript, lo que me permite desarrollar sitios y aplicaciones web con funcionalidad tanto en el frontend como en el backend.</p>
+    </div>
+    <div>
+        <h2 id="Proyectos" class="pixelify-sans-header">Proyectos</h2>
+        <h3 class="pixelify-sans-header">Goblin´s Gold Hunt</h3>
+        <p class="pixelify-sans-header">Mi juego, Goblin's Gold Hunt, es un juego en 2D con gráficos en estilo pixel art. El jugador controla a un duende que debe recolectar la mayor cantidad de monedas de oro posible antes de perder sus tres vidas. Está ambientado en un bosque donde tendrás que enfrentarte a diferentes animales, como ardillas y búhos, mientras evitas sus ataques. El juego registra una puntuación basada en las monedas recolectadas. Lo he desarrollado usando el IDE Visual Studio Community, empleando la biblioteca SFML y programado en C++.</p>
+        <h3 class="pixelify-sans-header">Programa de gestion de articulos</h3>
+        <p class="pixelify-sans-header">He trabajado en el desarrollo de un programa diseñado para gestionar información de artículos en una base de datos alojada en un servidor. Esta base de datos, construida en SQL, almacena detalles como el nombre del artículo, su descripción, marca, categoría, precio y múltiples imágenes asociadas. El programa incluye diversas funcionalidades, como la posibilidad de agregar nuevos artículos al catálogo, listar los artículos ya cargados, y modificar cualquier información relacionada. También permite añadir nuevas categorías o marcas, gestionar imágenes adicionales para los productos, y eliminar aquellos artículos cuya información ya no sea necesaria. Este programa está diseñado para el sistema operativo Windows, desarrollado en el IDE Visual Studio Community utilizando el lenguaje C# y con una base de datos en Azure Management (SQL). La interfaz gráfica fue creada utilizando el framework .NET.</p>
+        <h3 class="pixelify-sans-header">Este portfolio</h3>
+        <p class="pixelify-sans-header">He creado este portfolio utilizando el IDE Visual Studio Code, empleando tecnologías web como HTML, CSS y JavaScript. El proyecto destaca por su diseño elegante y funcionalidad dinámica, con una estructura bien definida que facilita la navegación. El HTML se encarga de la estructura básica del sitio, mientras que el CSS se utiliza para aplicar estilos visuales y crear una experiencia atractiva para el usuario. El JavaScript agrega interactividad, permitiendo una experiencia más envolvente y personalizada. Este enfoque integral asegura que el portfolio no solo sea visualmente atractivo, sino también funcional y accesible.</p>
+
+    </div>
+    <div>                            
+        <h2 id='contactos' class="pixelify-sans-header">Contactos</h2>
+        <a href="https://www.linkedin.com/in/ivan-pozzi-58129627a">
+            <img class="centered-image conteiner" width="100" src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/0baeb31aedf8e64.png" alt="imagen linkedin";>
+        </a>
+        <a href="https://github.com/IvanPozzi?tab=repositories">
+            <img class="centered-image conteiner" width="100" src="https://imgs.search.brave.com/YOk7wcaxWp2RuYPOVEfob3PsJ9qcQ6lPzAsGcDYMOPk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9naXRo/dWIuY29tL0FkYW1T/cGFubmJhdWVyL3Bp/eGVsX2FydC9yYXcv/bWFzdGVyL3JlYWRt/ZS9naXRodWJfbG9n/b19waXhlbC5wbmc" alt="logo github ";>
+        </a>
+        <a href="mailto:tu_correo@ejemplo.com">
+            <img class="centered-image conteiner" width="100" src="https://i.pinimg.com/1200x/c2/3c/53/c23c536db5ad5f9510b457dbc626fa81.jpg" alt="imagen gmail";>
+        </a>
+    </div>
+
+</body>
+</html>

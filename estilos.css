@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(31, 28, 28);
+    font-weight: 100; 
+    margin: 0; 
+    padding: 0; }
+
+  @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+  .pixelify-sans-header {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight:900;
+    font-style: normal;
+  }
+  .conteiner1{
+    background-image: url("https://i.pinimg.com/1200x/7e/3b/50/7e3b5045d47030a4906e1dd2954cd33b.jpg");
+    text-align:center;
+    background-size: cover;
+    background-position:center ;
+    background-repeat:no-repeat ;
+    color:rgb(83, 231, 24); 
+    width:310px ;
+    height: 310px;
+   
+    scale: 1;
+}
+.conteiner2{
+    background-image: url("https://i.pinimg.com/1200x/3d/74/68/3d7468d1bb523674726ba6934a396566.jpg");
+    text-align:center;
+    background-size: cover;
+    background-position:center ;
+    background-repeat:no-repeat ;
+    color:red; 
+    width:310px ;
+    height: 310px;
+   
+    scale: 1;
+}
+.conteiner3{
+    background-image: url("https://i.pinimg.com/1200x/6b/9a/c4/6b9ac42d4df2452111f38220e366b72e.jpg");
+    text-align:center;
+    background-size: cover;
+    background-position:center ;
+    background-repeat:no-repeat ;
+    color:red; 
+    width:310px ;
+    height: 310px;
+   
+    scale: 1;
+}
+.conteiner4{
+    background-image: url("https://i.pinimg.com/1200x/38/bd/e8/38bde8b53863932cf7ba13cede52d808.jpg");
+    text-align:center;
+    background-size: cover;
+    background-position:center ;
+    background-repeat:no-repeat ;
+    color:rgb(246, 255, 0); 
+    width:310px ;
+    height: 310px;
+   
+    scale: 1;
+}
+/*para centrar los textos*/
+.text-center {
+    text-align: center; /* Centra el texto*/
+    width: 100%; /* con el 100 el contenedor ocupa todo */
+    margin: 0 auto; /* esto centra el contenedor */
+}
+/*con esto centro la imagen de mi*/
+.otrocontainer {
+    text-align: center; /* Centra la imagen dentro del contenedor */
+    width: 100%; 
+    margin-top: 20px; /* Añade espacio superior si lo deseas */
+}
+/*verifica que la imagen exista en la web,creo por lo que entendi*/
+.centered-image {
+    display: inline-block; 
+}
+/*esta se usa para centrar el texto*/
+.centered-text {
+    text-align: center;
+    margin: 0 auto; 
+}
+/* esta es para que la imagen vuelva a su posicion original despues de que fue resaltada  */
+.centered-image {
+    /* Estilos normales */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* y esta es la que me resalta la imagen cuando paso el puntero por arriba*/
+.centered-image:hover {
+    transform: scale(1.1); /* Aumenta el tamanio ligeramente */
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); /*la sombrea */
+    cursor: pointer; /* Cambia el puntero  */
+}
