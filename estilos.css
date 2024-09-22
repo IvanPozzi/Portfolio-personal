@@ -8,6 +8,13 @@ body {
     margin: 0;
     filter: saturate(200%);
 }
+.containertodosloselementos {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columnas */
+    justify-content: space-between; /* Espacia los elementos dentro del contenedor */
+}
 
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 600px) {
@@ -27,9 +34,12 @@ html, body {
     height: 100%;
 }
 
-.containertodosloselementos {
-    min-height: 100vh; /* vh = viewport height, que es la altura del viewport */
-    width: 100%;
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: cover; /* Escala la imagen para que cubra todo el fondo */
+        background-position: center top; /* Asegura que la parte importante de la imagen sea visible */
+        height: auto; /* Deja que la altura sea automática */
+    }
 }
 /*body {
     background-color: black;
